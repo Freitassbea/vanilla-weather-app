@@ -15,75 +15,72 @@
   </head>
   <body>
     <div class="container">
-      <div class="weather-app-wrapper">
-        <div class="weather-app">
-          <form id="search-form" class="mb-3">
-            <div class="row">
-              <div class="col-9">
-                <input
-                  type="search"
-                  placeholder="Type a city.."
-                  class="form-control"
-                  id="city-input"
-                  autocomplete="off"
-                />
-              </div>
-              <div class="col-3">
-                <input
-                  type="submit"
-                  value="Search"
-                  class="btn btn-primary w-100"
-                />
-              </div>
-            </div>
-          </form>
-          <h1 id="city"></h1>
-          <ul>
-            <li>Last updated: <span id="date"></span></li>
-            <li id="description"></li>
-          </ul>
+      <div class="weather-app">
+        <form id="search-form" class="mb-3">
           <div class="row">
-            <div class="col-6">
-              <div class="d-flex weather-temperature">
-                <img src="" alt="cloudy" id="icon" />
-                <div class="d-flex-left">
-                  <strong id="temperature"></strong
-                  ><span class="units">°C</span>
-                </div>
-              </div>
+            <div class="col-9">
+              <input
+                type="search"
+                placeholder="Type a city.."
+                class="form-control"
+                id="city-input"
+                autocomplete="off"
+              />
             </div>
-            <div class="col-6">
-              <ul>
-                <li>Humidity: <span id="humidity"></span>%</li>
-                <li>Wind: <span id="wind"></span> km/h</li>
-              </ul>
+            <div class="col-3">
+              <input
+                type="submit"
+                value="Search"
+                class="btn btn-primary w-100"
+              />
             </div>
           </div>
-          <div class="weather-forecast" id="forecast">
-            <div class="row">
-              <div class="col-2">
-                <div class="weather-forecast-date">Thu</div>
-                <img
-                  src="https://openweathermap.org/img/wn/01d@2x.png"
-                  alt=""
-                  width="54"
-                />
-                <div class="weather-forecast-temperature">
-                  <span class="weather-forecast-temperature-max"> 18°</span>
-                  <span class="weather-forecast-temperature-min">12°</span>
-                </div>
+        </form>
+        <h1 id="city"></h1>
+        <ul>
+          <li>Last updated: <span id="date"></span></li>
+          <li id="description"></li>
+        </ul>
+        <div class="row">
+          <div class="col-6">
+            <div class="d-flex weather-temperature">
+              <img src="" alt="cloudy" id="icon" />
+              <div class="d-flex-left">
+                <strong id="temperature"></strong><span class="units">°C</span>
+              </div>
+            </div>
+          </div>
+          <div class="col-6">
+            <ul>
+              <li>Humidity: <span id="humidity"></span>%</li>
+              <li>Wind: <span id="wind"></span> km/h</li>
+            </ul>
+          </div>
+        </div>
+        <div class="weather-forecast" id="forecast">
+          <div class="row">
+            <div class="col-2">
+              <div class="weather-forecast-date">Thu</div>
+              <img
+                src="https://openweathermap.org/img/wn/01d@2x.png"
+                alt=""
+                width="60"
+              />
+              <div class="weather-forecast-temperature">
+                <span class="weather-forecast-temperature-max"> 18°</span>
+                <span class="weather-forecast-temperature-min">12°</span>
               </div>
             </div>
           </div>
         </div>
-        <small>
-          <a
-            href="https://github.com/Freitassbea/vanilla-weather-app"
-            target="_blank"
-            >Open-source code</a
-          >, by Beatriz Freitas
-        </small>
       </div>
+      <footer>
+        <a
+          href="https://github.com/Freitassbea/vanilla-weather-app"
+          target="_blank"
+          >Open-source code</a
+        >, by Beatriz Freitas
+      </footer>
     </div>
     <script src="src/app.js"></script>
   </body>

@@ -48,7 +48,7 @@ function displayForecast(response) {
           forecastDay.weather[0].icon
         }@2x.png"
         alt=""
-        width="54"
+        width="60"
       />
       <div class="weather-forecast-temperature">
         <span class="weather-forecast-temperature-max"> ${Math.round(
@@ -115,4 +115,4 @@ function handleSubmit(event) {
 let form = document.querySelector("#search-form");
 form.addEventListener("submit", handleSubmit);
 
-search("New York");
+search("Sao Paulo");
